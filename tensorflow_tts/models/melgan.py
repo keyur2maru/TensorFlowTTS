@@ -273,7 +273,11 @@ class TFMelGANGenerator(BaseModel):
         if config.is_weight_norm is True:
             self._apply_weightnorm(layers)
 
-        self.melgan = tf.keras.models.Sequential(layers)
+        input_layer = layers[0]
+        # Example: Access the last layer
+        output_layer = layers[-1]    
+        #self.melgan = tf.keras.models.Sequential(layers)
+        self.melgan = tf.keras.Model(inputs=input_layer, outputs=output_layer)
 
     def call(self, mels, **kwargs):
         """Calculate forward propagation.
