@@ -273,7 +273,7 @@ class TFMelGANGenerator(BaseModel):
         if config.is_weight_norm is True:
             self._apply_weightnorm(layers)
 
-        ]
+        
         # Example: Access the last layer
         input_tensor = tf.keras.layers.Input(shape=(None, None, 80))
         x = input_tensor
