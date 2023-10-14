@@ -275,7 +275,13 @@ class TFMelGANGenerator(BaseModel):
 
         ]
         # Example: Access the last layer
-           
+        input_tensor = tf.keras.layers.Input(shape=(None, None, 80))
+        x = input_tensor
+        for layer in self.layers:
+            x = layer(x)
+        model = tf.keras.Model(inputs=input_tensor, outputs=x)
+        self.melgan_acess=model
+        
         self.melgan = tf.keras.models.Sequential(layers)
         
 
