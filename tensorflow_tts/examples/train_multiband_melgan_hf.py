@@ -36,7 +36,7 @@ import yaml
 import tensorflow_tts
 #from examples.melgan.audio_mel_dataset import AudioMelDataset
 #from examples.hifigan.train_hifigan import TFHifiGANDiscriminator
-from tensorflow_tts.examples.melgan.train_melgan import MelganTrainer, collater
+from tensorflow_tts.examples.train_melgan import MelganTrainer, collater
 from tensorflow_tts.configs import (
     MultiBandMelGANDiscriminatorConfig,
     MultiBandMelGANGeneratorConfig,
