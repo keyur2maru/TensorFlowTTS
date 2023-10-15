@@ -14,6 +14,8 @@
 </h2>
 <h2 align="center">
 <p>Real-Time State-of-the-art Speech Synthesis for Tensorflow 2
+<p>this is fork of Tensorflow-tts with a couple of improvements, dependency on tensorflow-gpu removed as well as german_transliterate on the docker file. also added example classes as part of library so you do not need to clone all repository to use dataset classes and trainer classes, I would like to pull a request but I doubt that it will be accepted as there is one about dependency on tensorflow-gpu that stop you from easily installing the library and it is still out there.
+<p> Here is a link that uses the library before the edits to train vocoder GAN Melgan which will help you train your model without using trainer classes and create your own trainer with functional model keras. go nuts :zany_face:
 </h2>
 
 :zany_face: TensorFlowTTS provides real-time state-of-the-art speech synthesis architectures such as Tacotron-2, Melgan, Multiband-Melgan, FastSpeech, FastSpeech2 based-on TensorFlow 2. With Tensorflow 2, we can speed-up training/inference progress, optimizer further by using [fake-quantize aware](https://www.tensorflow.org/model_optimization/guide/quantization/training_comprehensive_guide) and [pruning](https://www.tensorflow.org/model_optimization/guide/pruning/pruning_with_keras), make TTS models can be run faster than real-time and be able to deploy on mobile devices or embedded systems.
