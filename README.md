@@ -13,7 +13,7 @@
 </p>
 </h2>
 <h2 align="center">
-<p>Real-Time State-of-the-art Speech Synthesis for Tensorflow 2
+<p> fork version of Tensorflow-tts that facilities couple of things
 </h2>   
 
 this is fork of Tensorflow-tts with a couple of improvements, dependency on tensorflow-gpu removed as well as german_transliterate on the docker file. also added example classes as part of library so you do not need to clone all repository to use dataset classes and trainer classes, I would like to pull request but I doubt that it will be accepted as there is one about dependency on tensorflow-gpu that stop you from easily installing the library and it is still out there.
