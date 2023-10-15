@@ -240,7 +240,7 @@ class MelganTrainer(GanBasedTrainer):
 
 
 def collater(items, batch_max_steps=tf.constant(8192, dtype=tf.int32),hop_size=tf.constant(256, dtype=tf.int32)):
-     """Initialize collater (mapping function) for Tensorflow Audio-Mel Dataset.
+    """Initialize collater (mapping function) for Tensorflow Audio-Mel Dataset.
 
     Args:
         batch_max_steps (int): The maximum length of input signal in batch.
