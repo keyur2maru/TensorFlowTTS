@@ -16,9 +16,9 @@
 <p> fork version of Tensorflow-tts that facilities couple of things
 </h2>   
 
-this is fork of Tensorflow-tts with a couple of improvements, dependency on tensorflow-gpu removed as well as german_transliterate on the docker file. also added example classes as part of library so you do not need to clone all repository to use dataset classes and trainer classes, I would like to pull request but I doubt that it will be accepted as there is one about dependency on tensorflow-gpu that stop you from easily installing the library and it is still out there.
+This is a fork of Tensorflow-tts with a couple of quality-of-life improvements, dependency on tensorflow-gpu removed as well as german_transliterate on the docker file. I also added example classes as part of the library so you do not need to clone the entire repository to use dataset classes and trainer classes, I would like to pull-request but I doubt that it will be accepted as there is one pull-request about dependency on tensorflow-gpu that stop you from easily installing the library and it is still out there.
 
-Here is a [link](https://github.com/MohmedAAK/GAN-TTS) that uses the library before the edits to train vocoder GAN Melgan which will help you train your model without using trainer classes and create your own trainer with functional model keras. go nuts :zany_face:
+Here is a [link](https://github.com/MohmedAAK/GAN-TTS) that uses the library before my edits to train vocoder GAN Melgan which will help you train your model without using trainer classes and create your own trainer with functional model keras. go nuts and have fun :zany_face:
 
 
 :zany_face: TensorFlowTTS provides real-time state-of-the-art speech synthesis architectures such as Tacotron-2, Melgan, Multiband-Melgan, FastSpeech, FastSpeech2 based-on TensorFlow 2. With Tensorflow 2, we can speed-up training/inference progress, optimizer further by using [fake-quantize aware](https://www.tensorflow.org/model_optimization/guide/quantization/training_comprehensive_guide) and [pruning](https://www.tensorflow.org/model_optimization/guide/pruning/pruning_with_keras), make TTS models can be run faster than real-time and be able to deploy on mobile devices or embedded systems.
