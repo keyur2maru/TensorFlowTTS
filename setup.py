@@ -25,7 +25,7 @@ requirements = {
         "tensorflow>=2.1",
         "tensorflow-addons>=0.10.0",
         "setuptools>=38.5.1",
-        "huggingface_hub==0.19.63",
+        "huggingface_hub==0.20.0",
         "librosa>=0.7.0",
         "soundfile>=0.10.2",
         "matplotlib>=3.1.0",
